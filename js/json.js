@@ -78,5 +78,85 @@ var json = {
         "urgency":["Is this chore urgent: ", "No"],
         "difficulty":["Difficulty: ", "5"],
         "chorenotes":["Chore Notes: ", "Notes about dusting the furniture."]
+    },
+    "chore11": {
+        "choretype": ["Chore Type: ", "Outside"],
+        "chorename": ["Name: ", "Clean Patio"],
+        "finishby": ["Finish By: ", "8/31/2012"],
+        "urgency":["Is this chore urgent: ", "No"],
+        "difficulty":["Difficulty: ", "5"],
+        "chorenotes":["Chore Notes: ", "Notes about cleaning the patio."]
+    },
+    "chore12": {
+        "choretype": ["Chore Type: ", "Errand"],
+        "chorename": ["Name: ", "take son to friend's house"],
+        "finishby": ["Finish By: ", "8/27/2012"],
+        "urgency":["Is this chore urgent: ", "No"],
+        "difficulty":["Difficulty: ", "2"],
+        "chorenotes":["Chore Notes: ", "Take Gavin to Brandon's house."]
+    },
+    "chore13": {
+        "choretype": ["Chore Type: ", "Inside"],
+        "chorename": ["Name: ", "Clean kid's room"],
+        "finishby": ["Finish By: ", "8/31/2012"],
+        "urgency":["Is this chore urgent: ", "Somewhat"],
+        "difficulty":["Difficulty: ", "7"],
+        "chorenotes":["Chore Notes: ", "Clean the kid's messy room."]
+    },
+    "chore14": {
+        "choretype": ["Chore Type: ", "Outside"],
+        "chorename": ["Name: ", "Organize Storage"],
+        "finishby": ["Finish By: ", "8/25/2012"],
+        "urgency":["Is this chore urgent: ", "Yes"],
+        "difficulty":["Difficulty: ", "9"],
+        "chorenotes":["Chore Notes: ", "Clean out both storage sheds."]
+    },
+    "chore15": {
+        "choretype": ["Chore Type: ", "Errand"],
+        "chorename": ["Name: ", "Go get movie"],
+        "finishby": ["Finish By: ", "8/27/2012"],
+        "urgency":["Is this chore urgent: ", "Yes"],
+        "difficulty":["Difficulty: ", "2"],
+        "chorenotes":["Chore Notes: ", "Going to get movie from Red Box."]
+    },
+    "chore16": {
+        "choretype": ["Chore Type: ", "Inside"],
+        "chorename": ["Name: ", "Clean Bathroom"],
+        "finishby": ["Finish By: ", "8/22/2012"],
+        "urgency":["Is this chore urgent: ", "Yes"],
+        "difficulty":["Difficulty: ", "6"],
+        "chorenotes":["Chore Notes: ", "Notes about cleaning the bathroom."]
+    },
+    "chore17": {
+        "choretype": ["Chore Type: ", "Outside"],
+        "chorename": ["Name: ", "Bath Dog"],
+        "finishby": ["Finish By: ", "8/27/2012"],
+        "urgency":["Is this chore urgent: ", "Somewhat"],
+        "difficulty":["Difficulty: ", "5"],
+        "chorenotes":["Chore Notes: ", "Notes about bathing the dog."]
+    },
+    "chore18": {
+        "choretype": ["Chore Type: ", "Errand"],
+        "chorename": ["Name: ", "take kids to doctor"],
+        "finishby": ["Finish By: ", "8/27/2012"],
+        "urgency":["Is this chore urgent: ", "No"],
+        "difficulty":["Difficulty: ", "3"],
+        "chorenotes":["Chore Notes: ", "Notes about the kid's doctor."]
+    },
+    "chore19": {
+        "choretype": ["Chore Type: ", "Inside"],
+        "chorename": ["Name: ", "Do laundry"],
+        "finishby": ["Finish By: ", "8/31/2012"],
+        "urgency":["Is this chore urgent: ", "Yes"],
+        "difficulty":["Difficulty: ", "5"],
+        "chorenotes":["Chore Notes: ", "Notes about doing the laundry."]
+    },
+    "chore20": {
+        "choretype": ["Chore Type: ", "Inside"],
+        "chorename": ["Name: ", "Finish school project"],
+        "finishby": ["Finish By: ", "8/31/2012"],
+        "urgency":["Is this chore urgent: ", "Yes"],
+        "difficulty":["Difficulty: ", "7"],
+        "chorenotes":["Chore Notes: ", "Notes about finishing my school project."]
     }
 }
