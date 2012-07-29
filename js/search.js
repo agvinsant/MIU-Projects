@@ -1,18 +1,18 @@
 window.addEventListener("DOMContentLoaded", function() {
 
 // getElementById Function
-    function a(x) {
+    function $(x) {
         var theElement = document.getElementById(x);
         return theElement;
     }
     
 
 //Search Page Functions
-    var search = a('searchButton');
+    var search = $('searchButton');
     
     var getSearch = function() {
-	var type = a('choretype').value;
-	var term = a('search').value;
+	var type = $('choretype').value;
+	var term = $('search').value;
 	
 	//Search by Type or Category Only
 	if(type != "Select Chore Type" && term === ""){

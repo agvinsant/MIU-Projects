@@ -22,6 +22,14 @@ var json = {
         "urgency":["Is this chore urgent: ", "No"],
         "difficulty":["Difficulty: ", "50"],
         "chorenotes":["Chore Notes: ", "Notes about going to the store."]
+    },
+    "chore4": {
+        "choretype": ["Chore Type: ", "Inside"],
+        "chorename": ["Name: ", "Make Bed"],
+        "finishby": ["Finish By: ", "08/31/2012"],
+        "urgency":["Is this chore urgent: ", "Yes"],
+        "difficulty":["Difficulty: ", "35"],
+        "chorenotes":["Chore Notes: ", "Notes about going to the store."]
     }
         
 }
