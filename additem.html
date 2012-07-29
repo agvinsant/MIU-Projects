@@ -1,0 +1,73 @@
+<!doctype html>
+<!-- Adam Vinsant -->
+<!-- VFW 1207 -->
+<!-- Project 3 additem.html page -->
+<html>
+	<head>
+		<!-- Character Set Meta -->
+		<meta charset="utf-8" />
+		<!-- keyword meta tags -->
+		<meta name="keywords" content="Full Sail University, Adam Vinsant,mobile development, visual frameworks, My Honey Do lIst" />
+		<!-- description meta tags -->
+		<meta name="description" content="My first HTML 5 web app called My Honey Do List!" />
+		<!-- robots meta tags -->
+		<meta name="robots" content="index, follow" />
+		<!-- viewport for iphone meta tag -->
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<!-- viewport for Droid -->
+		 <meta name="viewport" content="target-densitydpi=device-dpi" />
+		<!-- CSS LINK -->
+		<link rel="stylesheet" href="css/style2.css" type="text/css" />
+		<!-- Page title -->
+		<title>My Honey-Do List</title>
+	</head>
+	<body>
+		<!-- Page body content goes here -->
+		<header><h1>My Chore List</h1></header>
+		<nav>
+		    <a href="index.html" id="home" class="home">Home</a>
+		    <a href="additem.html" id="index" class="index">Add New</a>
+		    <a href="#" class="clear" id="clearButton">Clear All</a>
+		    <a href="search.html" class="search">Search</a>
+		</nav>
+		    <!-- This is the start of my options... Starting with the drop down option...-->
+		 
+		<form method="post" action="#" id="choreForm"> 
+			<a class="display" href="#" id="displayButton">Display All</a>
+			<br/>
+			<fieldset>  
+				<legend>Add A Chore</legend>
+				<p>** Required Fields</p>
+				<!-- Start of the form list: Name, Urgency, Date to finish, difficulty, chore notes-->
+				<ul id="errors"></ul>
+				<ul>   
+					<!--drop down option specifying chore type..-->
+					<li id="select"><label class="choretype" for="choretype">**Chore Type: </label></li>
+					<li><label for="chorename">**Name: </label><input type="text" id="chorename" class="chorename" placeholder="Mow Lawn"/></li>
+					<li><label for="finishby" >**Finish By: </label><input type="date" class="finishby" id="finishby"/></li>
+					<li><label for="urgency">Is This Chore Urgent?: </label>
+						<ul class="checkbox">
+							<li><label for="yes" ><input type="radio" name="urgency" value="Yes" id="yes"/>Yes</label></li>
+							<li><label for="no" ><input type="radio" name="urgency" value="No" id="no" />No</label></li>
+							<li><label for="somewhat"><input type="radio" name="urgency" value="Somewhat" id="somewhat" />Somewhat</label></li>
+						</ul>
+					</li>
+					<li>Chore Difficulty: 
+						<label for="difficulty"><span>1</span><input type="range" id="difficulty" class="difficulty" /><span>100</span></label></li>
+					<li>Chore Notes:
+						<textarea name="Chore Notes" class="chorenotes" id="chorenotes" placeholder="Type Notes Here" ></textarea></li>
+				</ul>               
+			</fieldset>
+			<br/>
+			<!--Buttons-->
+			<!--Submit and reset-->
+			<input name="submitButton" type="submit" class="submit" id="submitButton" value="Submit Chore" />   
+			<input name="resetButton" type="reset" class="reset" id="resetButton" value="Clear Form" />
+			   
+			<!-- hidden tags, really don't know what to put, I just know it was a requirement :) -->
+			<input type="hidden" value="true"/> 
+		</form>
+		<script src=js/json.js type="text/javascript"></script>
+		<script src=js/main.js type="text/javascript"></script>
+	</body>
+</html>
