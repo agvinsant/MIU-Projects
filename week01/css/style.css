@@ -49,10 +49,12 @@ div {
 	border-radius: 15px;
 	
 }
-
-
 img.feature {
-	border:#330099 solid 2px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 15px;
+	border: #330099 solid 2px;
 }
 
 a.addchore, input.searchButton {
