@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	
         
     // getElementById Function
-    function $(x) {
+    function a(x) {
         var theElement = document.getElementById(x);
         return theElement;
     }
@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", function() {
     // Creating Select elements and populate with options
     function makeType () {
         var formTag = document.getElementsByTagName("form"),
-            selectLi = $('select'),
+            selectLi = a('select'),
             makeSelect = document.createElement('select');
             makeSelect.setAttribute('id', 'choretype');  //fill 'choretype' with new id tag for select items.
         
@@ -50,12 +50,12 @@ window.addEventListener("DOMContentLoaded", function() {
     function toggleControls(n) {
 	switch(n) {
 		case "on":
-		        $('choreForm').style.display = "none";            //Change 'choreForm' to fit to new HTML tag for localStorage
-			$('displayButton').style.display = "none";
+		        a('choreForm').style.display = "none";            //Change 'choreForm' to fit to new HTML tag for localStorage
+			a('displayButton').style.display = "none";
 			break;
 		case "off":
-			$('choreForm').style.display = "block";
-			$('items').style.display = 'none';
+			a('choreForm').style.display = "block";
+			a('items').style.display = 'none';
 			break;
 		default:
 			return false;
@@ -77,12 +77,12 @@ window.addEventListener("DOMContentLoaded", function() {
         // Object contains array with the form label and input value
         getSelectedRadio();
         var item= {};
-            item.choretype = ["Chore Type:", $('choretype').value];		//Change these to fit new form tags and id's
-            item.chorename = ["Chore Name:", $('chorename').value];
-	    item.finishby  = ["Finish By:", $("finishby").value];
+            item.choretype = ["Chore Type:", a('choretype').value];		//Change these to fit new form tags and id's
+            item.chorename = ["Chore Name:", a('chorename').value];
+	    item.finishby  = ["Finish By:", a("finishby").value];
 	    item.urgency   = ["Is this chore Urgent?:", urgencyValue];
-            item.difficulty= ["Difficulty:", $('difficulty').value];
-            item.chorenotes= ["Chore Notes:", $('chorenotes').value];
+            item.difficulty= ["Difficulty:", a('difficulty').value];
+            item.chorenotes= ["Chore Notes:", a('chorenotes').value];
         
         // Save data to local storage, use Stringify to convert object to string
         localStorage.setItem(id, JSON.stringify(item));
@@ -107,7 +107,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	makeList.setAttribute("class", "choreList");	//change 'choreList' to fit new HTML
         makeDiv.appendChild(makeList);
         document.body.appendChild(makeDiv);
-	$('items').style.display = 'block';
+	a('items').style.display = 'block';
         for (var i=0, len=localStorage.length; i<len; i++) {
             var makeli = document.createElement('li');
 	    var linksLi = document.createElement('li');
@@ -170,9 +170,9 @@ window.addEventListener("DOMContentLoaded", function() {
 	toggleControls('off');
 	
 	// populating the form with data from local storage
-	$('choretype').value = item.choretype[1];		//change id's to fit html and form type
-	$('chorename').value = item.chorename[1];		//change id's to fit html and form type
-	$('finishby').value = item.finishby[1];			//change id's to fit html and form type
+	a('choretype').value = item.choretype[1];		//change id's to fit html and form type
+	a('chorename').value = item.chorename[1];		//change id's to fit html and form type
+	a('finishby').value = item.finishby[1];			//change id's to fit html and form type
 	var radios = document.forms[0].urgency;
 	for(var i=0; i<radios.length; i++) {
 		if(radios[i].value == "Yes" && item.urgency[1] == "Yes") {		//Change id tags to fit html
@@ -184,13 +184,13 @@ window.addEventListener("DOMContentLoaded", function() {
 		}
 	}
 	
-	$('difficulty').value = item.difficulty[1];		//Change to fit html and form type
-	$('chorenotes').value = item.chorenotes[1];
+	a('difficulty').value = item.difficulty[1];		//Change to fit html and form type
+	a('chorenotes').value = item.chorenotes[1];
 	
 	//remove the initial listener from the input submitButton
 	submitButton.removeEventListener("click", storeData);
 	//change submitButton value to Edit button
-	$('submitButton').value = "Edit Chore";		//change to fit form type
+	a('submitButton').value = "Edit Chore";		//change to fit form type
 	var editSubmit = a('submitButton');
 	// save key value established in this function as a property of the editSubmit event
 	// so we can use that value when we save the data we edited.
@@ -294,17 +294,17 @@ window.addEventListener("DOMContentLoaded", function() {
     
     // function calls
     makeType();
-    var errMsg = $('errors');
+    var errMsg = a('errors');
     errMsg.setAttribute('class', 'errMsg');
     
     // Button Action functions
-    var displayButton = $('displayButton');
+    var displayButton = a('displayButton');
     displayButton.addEventListener("click", getData);
     
-    var clearButton = $('clearButton');
+    var clearButton = a('clearButton');
     clearButton.addEventListener("click", clearLocal);
     
-    var submitButton = $('submitButton');
+    var submitButton = a('submitButton');
     submitButton.addEventListener("click", validate);
     
     
