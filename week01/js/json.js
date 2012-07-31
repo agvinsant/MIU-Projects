@@ -1,3 +1,8 @@
+//Adam Vinsant
+//MIU 1208
+//Project 1
+//JSON DATA
+
 var json = {
     "chore1": {
         "choretype": ["Chore Type: ", "Inside"],
