@@ -45,8 +45,8 @@ var json = {
         "chorenotes":["Chore Notes: ", "Notes raking leaves."]
     },
     "chore6": {
-        "choretype": ["Chore Type: ", "Errand"],
-        "chorename": ["Name: ", "pay bill"],
+        "choretype": ["Chore Type: ", "Pay Bill"],
+        "chorename": ["Name: ", "Power Bill"],
         "finishby": ["Finish By: ", "8/31/2012"],
         "urgency":["Is this chore urgent: ", "No"],
         "difficulty":["Difficulty: ", "2"],
@@ -157,8 +157,8 @@ var json = {
         "chorenotes":["Chore Notes: ", "Notes about doing the laundry."]
     },
     "chore20": {
-        "choretype": ["Chore Type: ", "Inside"],
-        "chorename": ["Name: ", "Finish school project"],
+        "choretype": ["Chore Type: ", "Make Phone Call"],
+        "chorename": ["Name: ", "Call Doctor's office"],
         "finishby": ["Finish By: ", "8/31/2012"],
         "urgency":["Is this chore urgent: ", "Yes"],
         "difficulty":["Difficulty: ", "7"],

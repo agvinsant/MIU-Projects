@@ -44,7 +44,7 @@ a.index {
 div {
 	border:solid #330099 2px;
 	margin: 5px;
-	padding: 20px;	
+	padding: 10px;	
 	background-image:url(../img/gradient2.png);
 	border-radius: 15px;
 	
@@ -76,7 +76,7 @@ a.addchore, input.searchButton {
 	text-shadow: #005 1px 2px 3px;
 }
 
-a.inside, a.outside, a.errand {
+a.inside, a.outside, a.errand, a.phone, a.bill {
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
@@ -95,12 +95,12 @@ a.inside, a.outside, a.errand {
 	text-shadow: #005 1px 2px 3px;
 }
 
-label {
+h2 {
 	display:block;
 	color:#0f9;
 	text-shadow:#330099 2px 3px 4px;
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:20px;
+	font-size:18px;
 	
 }
 
