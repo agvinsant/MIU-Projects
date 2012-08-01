@@ -1,7 +1,7 @@
 //Adam Vinsant
 //MIU 1208
 //Project 1
-//JSON DATA
+//JSON DATA Finished
 
 var json = {
     "chore1": {

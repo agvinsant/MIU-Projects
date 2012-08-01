@@ -1,7 +1,7 @@
 // Adam Vinsant
 // MIU 1208
 // My Honey Do List js file
-// Project 1
+// Project 1 Finished
 
 window.addEventListener("DOMContentLoaded", function() {
 
