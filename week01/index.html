@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<!-- Adam Vinsant -->
+<!-- MIU 1208 -->
+<!-- Project 1 index.html Finished-->
+<html>
+	<head>
+		<!-- Character Set Meta -->
+		<meta charset="UTF-8">
+		<!-- keyword meta tags -->
+		<meta name="keywords" content="Full Sail University, Adam Vinsant, mobile development, My Honey Do lIst" />
+		<!-- description meta tags -->
+		<meta name="description" content="My first HTML 5 web app called My Honey Do List!" />
+		<!-- robots meta tags -->
+		<meta name="robots" content="index, follow" />
+		<!-- viewport for iphone meta tag -->
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<!-- viewport for Droid -->
+		<meta name="viewport" content="target-densitydpi=device-dpi" />
+		<!-- CSS LINK -->
+		<link rel="stylesheet" href="css/style.css" type="text/css"/>
+		<!-- Page title -->
+		<title>My Honey Do List</title>
+	</head>
+	<body>
+		
+		<header> 
+			<h1>My Honey Do List</h1>
+		</header>
+		<!-- This is the feature image and CTA-->
+		<div class="content">
+			<img id="feature" class="feature" src="img/handyman.png" width=250 height=150/>
+			<a class="addchore" id="addchore" href="additem.html" >Add a Chore</a>
+		</div>
+		<!-- This is the search portion -->
+		<div class="search">
+			<h2>Search chores</h2><input type="text" class="chorename" id="search" />
+			<input type="button" value="Search Chores" id="searchButton" class="searchButton" /><br/>
+		</div>
+		<!-- This is the browse section with links to categories -->
+		<div class="browse">
+			<h2>Browse chores by type</h2>
+			<a class="inside" id="inside" href="#">Inside Jobs</a>
+			<a class="outside" id="outside" href="#">Outside Jobs</a>
+			<a class="errand" id="errand" href="#">Errand Runs</a>
+			<a class="phone" id="phone" href="#">Make Phone Call</a>
+			<a class="bill" id="bill" href="#">Pay Bill</a>
+		</div>
+		<script src=js/main.js type="text/javascript"></script>
+	</body>
+</html>

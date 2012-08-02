@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<!-- Adam Vinsant -->
+<!-- VFW 1207 -->
+<!-- Project 3 index.html page -->
+<html>
+	<head>
+		<!-- Character Set Meta -->
+		<meta charset="UTF-8">
+		<!-- keyword meta tags -->
+		<meta name="keywords" content="Full Sail University, Adam Vinsant, mobile development, visual frameworks, My Honey Do lIst" />
+		<!-- description meta tags -->
+		<meta name="description" content="My first HTML 5 web app called My Honey Do List!" />
+		<!-- robots meta tags -->
+		<meta name="robots" content="index, follow" />
+		<!-- viewport for iphone meta tag -->
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<!-- viewport for Droid -->
+		<meta name="viewport" content="target-densitydpi=device-dpi" />
+		<!-- CSS LINK -->
+		<link rel="stylesheet" href="css/style2.css" type="text/css"/>
+		<!-- Page title -->
+		<title>My Little Helper</title>
+	</head>
+	<body>
+		<header><h1>My Chore List</h1></header>
+		<nav> 
+		    <!-- I built in a link or home button for myself inside the header to switch back and forth to the index page without having to create a home button --> 
+		    <a href="index.html" id="home" class="home">Home</a>
+		    <a href="additem.html" id="index" class="index">Add New Chore</a>
+		    <a href="#" class="clear" id="clearButton">Clear All Chores</a>
+		    <a class="display" href="#" id="displayButton">Display All Chores</a>
+		</nav>
+		<form action="#" method="post" id="choreForm" />
+                    <fieldset id="choreFieldSet">
+                        <legend>Search Chores</legend>
+                        <ul id="errors"></ul>
+                        <ul>
+                            <li id="select"><label for="choretype">By Chore Type:</label></li>
+                            <li><label for="search">Search Term:</label><input type="text" class="chorename" id="search" /></li>
+                        </ul>
+                    </fieldset>
+                    <input type="button" value="Search" id="searchButton" class="searchButton" /><br />
+                </form>
+                <div id="results"></div>
+		<script src=js/search.js type="text/javascript"></script>
+		<script src=js/main.js type="text/javascript"></script>
+	</body>
+</html>
