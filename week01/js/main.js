@@ -1,12 +1,12 @@
 // Adam Vinsant
-// MIU 1208
+// VFW 1207
 // My Honey Do List js file
-// Project 1 Finished
+// Activity 3
 
 window.addEventListener("DOMContentLoaded", function() {
 
      // id variables
-    var opt= ["Select Chore Type", "Inside", "Outside", "Errand", "Make Phone Call", "Pay Bill" ],  //For New App...Change this to fit to new HTML
+    var opt= ["Select Chore Type", "Inside", "Outside", "Errand"],  //For New App...Change this to fit to new HTML
         urgencyValue;
 	
         
