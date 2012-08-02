@@ -6,7 +6,7 @@
 window.addEventListener("DOMContentLoaded", function() {
 
      // id variables
-    var opt= ["Select Chore Type", "Inside", "Outside", "Errand"],  //For New App...Change this to fit to new HTML
+    var opt= ["Select Chore Type", "Inside", "Outside", "Errand", "Make Phone Call", "Pay Bill"],  //For New App...Change this to fit to new HTML
         urgencyValue;
 	
         
