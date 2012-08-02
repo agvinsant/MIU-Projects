@@ -162,6 +162,6 @@ var json = {
         "finishby": ["Finish By: ", "8/31/2012"],
         "urgency":["Is this chore urgent: ", "Yes"],
         "difficulty":["Difficulty: ", "7"],
-        "chorenotes":["Chore Notes: ", "Notes about finishing my school project."]
+        "chorenotes":["Chore Notes: ", "Notes about making a phone call."]
     }
 }
