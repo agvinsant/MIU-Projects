@@ -223,9 +223,9 @@ window.addEventListener("DOMContentLoaded", function() {
     
     function validate(e) {
 	// Defining elements to validate
-	var getChoreType = $('choretype');	//change var's and id's to fit form type
-	var getChoreName = $('chorename');
-	var getFinishBy  = $('finishby');
+	var getChoreType = a('choretype');	//change var's and id's to fit form type
+	var getChoreName = a('chorename');
+	var getFinishBy  = a('finishby');
 	
 	//reset error messages
 	errMsg.innerHTML = "";
