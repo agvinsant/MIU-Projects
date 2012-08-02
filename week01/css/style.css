@@ -76,7 +76,7 @@ a.addchore, input.searchButton {
 	text-shadow: #005 1px 2px 3px;
 }
 
-a.inside, a.outside, a.errand, a.phone, a.bill {
+a.inside, a.outside, a.errand, a.phone, a.bill, a.home {
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
