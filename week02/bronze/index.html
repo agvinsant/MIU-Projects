@@ -1,0 +1,136 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Honey Do List</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="css/style.css"/>
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+    <!-- HOME PAGE -->
+    <div data-role="page" id="home">
+    
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h1>Honey Do List</h1>
+        </div>
+        
+        <div data-role="content">
+            <div data-role="fieldcontain">   
+                <img id="feature" class="feature" src="images/handyman.png" width=250 height=150/>
+                <a href="#additem" data-role="button" data-icon="arrow" data-iconpos="right" data-theme="b">Add a Chore</a>
+            </div> 
+            
+            <div data-role="fieldcontain">
+                <label for="search">Search Chores:</label>
+                <input type="search" name="search" id="search" value="" />
+            </div>
+            
+            <div data-role="fieldcontain">
+                <label for="browse">Browes Chores By Type:</label>
+                <a href="#construction" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Inside Jobs</a>
+                <a href="#construction" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Outside Jobs</a>
+                <a href="#construction" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Errand Runs</a>
+                <a href="#construction" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Make Phone Call</a>
+                <a href="#construction" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Pay Bill</a>
+            </div>
+        </div>
+        
+        <div data-role="footer" data-position="fixed" data-theme="b" data-id="additem">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#" class="display" id="displayButton">Display All</a></li>
+                </ul>
+            </div>
+        </div>    
+    </div>
+    
+    <!-- Add Item PAGE -->
+    <div data-role="page" id="additem" data-add-back-btn="true">
+    
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h1>Add a Chore</h1>
+        </div>
+        
+        <div data-role="content">
+            <form method="post" action="" id="choreForm"> 
+		<ul id="errors"></ul>
+		  
+					<!--drop down option specifying chore type..-->
+					<li id="select"><label class="choretype" for="choretype">**Chore Type: </label></li>
+					<li><label for="chorename">**Name: </label><input type="text" id="chorename" class="chorename" placeholder="Mow Lawn"/></li>
+					<li><label for="finishby" >**Finish By: </label><input type="date" class="finishby" id="finishby"/></li>
+					<li><label for="urgency">Is This Chore Urgent?: </label>
+						<ul class="checkbox">
+							<li><label for="yes" ><input type="radio" name="urgency" value="Yes" id="yes"/>Yes</label></li>
+							<li><label for="no" ><input type="radio" name="urgency" value="No" id="no" />No</label></li>
+							<li><label for="somewhat"><input type="radio" name="urgency" value="Somewhat" id="somewhat" />Somewhat</label></li>
+						</ul>
+					</li>
+					<li>Chore Difficulty: 
+						<label for="difficulty"><span>1</span><input type="range" id="difficulty" class="difficulty" min="1" max="10" step="1" /><span>10</span></label></li>
+					<li>Chore Notes:
+						<textarea name="Chore Notes" class="chorenotes" id="chorenotes" placeholder="Type Notes Here" ></textarea></li>
+				</ul>               
+			</fieldset>
+			<!--Buttons-->
+			<!--Submit and reset-->
+			<input name="submitButton" type="submit" class="submit" id="submitButton" value="Submit Chore" />   
+                        <input name="resetButton" type="reset" class="reset" id="resetButton" value="Clear Form" />
+	    </form>
+        </div>
+        
+        <div data-role="footer" data-position="fixed" data-theme="b" data-id="additem">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#displayAll">Display All</a></li>
+                </ul>
+            </div>
+        </div>    
+    </div>
+    <!-- Under Construction Page -->
+    <div data-role="page" id="construction" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h1>Under Construction</h1>
+        </div>
+        
+        <div data-role="content">
+            <p>Please excuse our mess! We are working hard to make this app run correctly. Please be patient and try back later!</p>
+        </div>
+        
+        <div data-role="footer" data-position="fixed" data-theme="b" data-id="additem">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#additem">Add a Chore</a></li>
+                </ul>
+            </div>
+        </div>    
+    </div>
+    
+    
+
+	<!-- JavaScript under here -->
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+    <script type="text/javascript" src="js/json.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
