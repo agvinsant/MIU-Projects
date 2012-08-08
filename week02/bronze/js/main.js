@@ -1,7 +1,7 @@
 // Adam Vinsant
-// MIU 1208
+// VFW 1207
 // My Honey Do List js file
-// Activity 2
+// Activity 3
 
 window.addEventListener("DOMContentLoaded", function() {
 
