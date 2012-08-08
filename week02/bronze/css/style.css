@@ -1,6 +1,111 @@
-#feature {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: #005 solid 2px;
+@charset "UTF-8";
+/* index style sheet */
+/* Adam Vinsant */
+/* MIU 1208 */
+/* Project 1 Finished*/
+
+html {
+	background-image:url(../img/honeydobkg.png);
+	background-repeat:repeat-x;
+	overflow:scroll;
+
+	
+}
+header {
+	margin: 5px;
+	background-image:url(../img/gradient1.png);
+	border:solid 2px #330099;
+	border-radius: 10px;
+}
+
+h1 {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	border-radius: 10px;
+	margin: 5px;
+	padding:5px;
+	background-image:url(../img/honeydobkg.png);
+        font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	text-decoration:none;
+	color:#005;
+	text-shadow:#0F9 2px 3px 4px;
+	border:#330099 solid 2px;
+	text-align: center;
+}
+
+a.index {
+	color:#005;
+	text-decoration:none;	
+}
+
+div {
+	border:solid #330099 2px;
+	margin: 5px;
+	padding: 10px;	
+	background-image:url(../img/gradient2.png);
+	border-radius: 15px;
+	
+}
+img.feature {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 15px;
+	border: #330099 solid 2px;
+}
+
+a.addchore, input.searchButton {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	border-radius: 15px;
+	margin-top: 5px;
+	padding: 5px;
+	background-image:url(../img/buttonbkg.png);
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	text-decoration:none;
+	color:#eee;
+	border:#0F9 solid 2px;
+	text-align: center;
+        text-transform: uppercase;
+	text-shadow: #005 1px 2px 3px;
+}
+
+a.inside, a.outside, a.errand, a.phone, a.bill, a.home {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	border-radius: 15px;
+	margin-top: 5px;
+	padding: 5px;
+	background-image:url(../img/buttonbkg.png);
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	text-decoration:none;
+	color:#eee;
+	border:#0F9 solid 2px;
+	text-align: center;
+        text-transform: uppercase;
+	text-shadow: #005 1px 2px 3px;
+}
+
+h2 {
+	display:block;
+	color:#0f9;
+	text-shadow:#330099 2px 3px 4px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	
+}
+
+input.chorename {
+	width:90%;
+	border-radius: 15px;
+
 }
