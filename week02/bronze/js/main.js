@@ -1,7 +1,7 @@
 // Adam Vinsant
-// VFW 1207
+// MIU 1208
 // My Honey Do List js file
-// Activity 3
+// Activity 2
 
 window.addEventListener("DOMContentLoaded", function() {
 
@@ -278,7 +278,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	var imageLi = document.createElement('li');
 	makeSubList.appendChild(imageLi);
 	var newImage = document.createElement('img');
-	var setSrc = newImage.setAttribute("src","img/" + typeName + ".png");
+	var setSrc = newImage.setAttribute("src","images/" + typeName + ".png");
 	imageLi.appendChild(newImage);
 	
     }
@@ -289,6 +289,7 @@ window.addEventListener("DOMContentLoaded", function() {
 		localStorage.setItem(id,JSON.stringify(json[n]));
 	}
     }
+    
     
     
     

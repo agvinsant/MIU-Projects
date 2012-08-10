@@ -278,7 +278,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	var imageLi = document.createElement('li');
 	makeSubList.appendChild(imageLi);
 	var newImage = document.createElement('img');
-	var setSrc = newImage.setAttribute("src","img/" + typeName + ".png");
+	var setSrc = newImage.setAttribute("src","images/" + typeName + ".png");
 	imageLi.appendChild(newImage);
 	
     }

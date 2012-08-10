@@ -11,11 +11,11 @@ window.addEventListener("DOMContentLoaded", function() {
     var search = a('searchButton');
     
     var getSearch = function() {
-	var type = a('choretype').value;
+	//var type = a('choretype').value;
 	var term = a('search').value;
 	
 	//Search by Type or Category Only
-	if(type != "Select Chore Type" && term === ""){
+	/*if(type != "Select Chore Type" && term === ""){
 		for(i=0, j=localStorage.length; i<j; i++){
 			var key = localStorage.key(i);
 			var value = localStorage.getItem(key);
@@ -26,10 +26,11 @@ window.addEventListener("DOMContentLoaded", function() {
 				}
 			}
 		}
-	}
+	}*/
+	
 	
 	//Search by Term Only
-	if(term != "" && type === "Select Chore Type"){
+	if(term != "" /*&& type === "Select Chore Type"*/){
 	    for(i=0, j=localStorage.length; i<j; i++){
 		var key = localStorage.key(i);
 		var value = localStorage.getItem(key);
@@ -43,8 +44,10 @@ window.addEventListener("DOMContentLoaded", function() {
 		}
 	    }
 	}
+	
+	
 	//Search by Both Type AND Term
-	if(term != "" && type !== "Select Chore Type"){
+	/*if(term != "" && type !== "Select Chore Type"){
 	    for(i=0, j= localStorage.length; i<j; i++){
 		var key = localStorage.key(i);
 		var value = localStorage.getItem(key);
@@ -57,8 +60,11 @@ window.addEventListener("DOMContentLoaded", function() {
 		    }
 		}
 	    }
-	}
+	}*/
+    
     };
+    
+    
     search.addEventListener("click", getSearch);
     
 });
