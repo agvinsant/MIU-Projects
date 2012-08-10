@@ -1,57 +1,146 @@
-<!DOCTYPE HTML>
-<!-- Adam Vinsant -->
-<!-- MIU 1208 -->
-<!-- Project 1 index.html Finished-->
-<html>
-	<head>
-		<!-- Character Set Meta -->
-		<meta charset="UTF-8">
-		<!-- keyword meta tags -->
-		<meta name="keywords" content="Full Sail University, Adam Vinsant, mobile development, My Honey Do lIst" />
-		<!-- description meta tags -->
-		<meta name="description" content="My first HTML 5 web app called My Honey Do List!" />
-		<!-- robots meta tags -->
-		<meta name="robots" content="index, follow" />
-		<!-- viewport for iphone meta tag -->
-		<meta name="viewport" content="user-scalable=no, width=device-width" />
-		<!-- viewport for Droid -->
-		<meta name="viewport" content="target-densitydpi=device-dpi" />
-		<!-- CSS LINK -->
-		<link rel="stylesheet" href="css/style.css" type="text/css"/>
-		<!-- Page title -->
-		<title>My Honey Do List</title>
-	</head>
-	<body>
-		
-		<header> 
-			<h1>My Honey Do List</h1>
-		</header>
-		<!-- This is the feature image and CTA-->
-		<div class="content">
-			<img id="feature" class="feature" src="img/handyman.png" width=250 height=150/>
-			<a class="addchore" id="addchore" href="additem.html" >Add a Chore</a>
-		</div>
-		<!-- This is the search portion -->
-		<div class="search">
-			<h2>Search chores</h2><input type="text" class="chorename" id="search" />
-			<input type="button" value="Search Chores" id="searchButton" class="searchButton" /><br/>
-		</div>
-		<!-- This is the browse section with links to categories -->
-		<div class="browse">
-			<h2>Browse chores by type</h2>
-			<a class="inside" id="inside" href="construction.html">Inside Jobs</a>
-			<a class="outside" id="outside" href="construction.html">Outside Jobs</a>
-			<a class="errand" id="errand" href="construction.html">Errand Runs</a>
-			<a class="phone" id="phone" href="construction.html">Make Phone Call</a>
-			<a class="bill" id="bill" href="construction.html">Pay Bill</a>
-		</div>
-		<div class="newsfeed">
-			<label for="browse">News Feed from CNN</label>
-			<script type="text/javascript" src="http://app.feed.informer.com/digest3/DEUPTBDXQQ.js"></script>
-			<noscript><a href="http://app.feed.informer.com/digest3/DEUPTBDXQQ.html">Click for &quot;Your New Digest 3&quot;.</a>
-			Powered by <a href="http://feed.informer.com/">RSS Feed Informer</a></noscript>
-		</div>
-		<script src="js/search.js" type="text/javascript"></script>
-		<script src=js/main.js type="text/javascript"></script>
-	</body>
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Honey Do List</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="css/style.css"/>
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+    <!-- HOME PAGE -->
+    <div data-role="page" id="home" data-theme="a">
+    
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h1>Honey Do List</h1>
+        </div>
+        
+        <div data-role="content">
+            <div data-role="fieldcontain">   
+                <img id="feature" class="feature" src="images/handymangold.gif" width=250 height=150/>
+                <a href="additem.html" data-ajax="false" data-role="button" data-icon="arrow" data-iconpos="right" data-theme="b">Add a Chore</a>
+            </div>
+	    
+	    <div data-role="fieldcontain">
+		<h2>Search chores</h2><input type="text" class="chorename" id="search" />
+		<input type="button" value="Search Chores" id="searchButton" class="searchButton" /><br/>
+	    </div>
+            <!--Collapsible menu --> 
+            <div data-role="fieldcontain">
+                <label for="browse">Browes Chores</label> 
+		    <div data-role="collapsible-set" data-filter="true">
+			<div data-role="collapsible" data-collapsed="true" data-theme="b">
+			    <h3>Inside Jobs</h3>
+			    <ul data-role="listview" data-theme="a">
+				<li><img id="inside" src="images/Inside.png"/><h3>Clean Kitchen</h3><p>Notes about cleaning the kitchen</p></li>
+				<li><img id="inside" src="images/Inside.png"/><h3>Clean Bathroom</h3><p>Notes about cleaning the Bathroom</p></li>
+				<li><img id="inside" src="images/Inside.png"/><h3>Sweep Floors</h3><p>Notes about sweeping the floor</p></li>
+			    </ul>
+			</div>
+			<div data-role="collapsible" data-collapsed="true" data-theme="b">
+			    <h3>Outside Jobs</h3>
+			    <ul data-role="listview" data-theme="a">
+				<li><img data-role="ui-li-icon" id="outside" src="images/Outside.png"/><h3>Mow Lawn</h3><p>Notes about mowing the lawn</p></li>
+				<li><img data-role="ui-li-icon" id="outside" src="images/Outside.png"/><h3>Take trash to road</h3><p>Notes about taking out trash</p></li>
+				<li><img data-role="ui-li-icon" id="outside" src="images/Outside.png"/><h3>Clean Gutters</h3><p>Notes about cleaning the gutters</p></li>
+			    </ul>
+			</div>
+			<div data-role="collapsible" data-collapsed="true" data-theme="b">
+			    <h3>Errand Runs</h3>
+			    <ul data-role="listview" data-theme="a">
+				<li><img data-role="ui-li-icon" id="errand" src="images/Errand.png"/><h3>Go to hardware store</h3></li>
+				<li><img data-role="ui-li-icon" id="errand" src="images/Errand.png"/><h3>Go get pizza</h3></li>
+				<li><img data-role="ui-li-icon" id="errand" src="images/Errand.png"/><h3>Go to Walmart</h3></li>
+			    </ul>
+			</div>
+			<div data-role="collapsible" data-collapsed="true" data-theme="b">
+			    <h3>Make Phone Call</h3>
+			    <ul data-role="listview" data-theme="a">
+				<li><img id="phone" src="images/Make Phone Call.png"/><h3>Call Doctor's Office</h3></li>
+				<li><img data-role="ui-li-icon" id="phone" src="images/Make Phone Call.png"/><h3>Call kid's school</h3></li>
+				<li><img data-role="ui-li-icon" id="phone" src="images/Make Phone Call.png"/><h3>Call Mom</h3></li>
+			    </ul>
+			</div>
+			<div data-role="collapsible" data-collapsed="true" data-theme="b">
+			    <h3>Pay Bill</h3>
+			    <ul data-role="listview" data-theme="a">
+				<li><img data-role="ui-li-icon" id="payBill" src="images/Pay Bill.png"/><h3>Rent bill</h3></li>
+				<li><img data-role="ui-li-icon" id="payBill" src="images/Pay Bill.png"/><h3>Power bill</h3></li>
+				<li><img data-role="ui-li-icon" id="payBill" src="images/Pay Bill.png"/><h3>Water bill</h3></li>
+			    </ul>
+			</div>
+			<div data-role="collapsible" data-collapsed="true" data-theme="b">
+			    <h3>Urgent Jobs</h3>
+			    <ul data-role="listview">
+				<li><img id="inside" src="images/Inside.png"/><h3>Clean Kitchen</h3><p>Finish By: 08/10/12</p></li>
+				<li><img data-role="ui-li-icon" id="outside" src="images/Outside.png"/><h3>Mow Lawn</h3><p>Finish By: 08/10/12</p></li>
+				<li><img data-role="ui-li-icon" id="errand" src="images/Errand.png"/><h3>Go get pizza</h3><p>Finish By: 08/11/12</p></li>
+				<li><img data-role="ui-li-icon" id="phone" src="images/Make Phone Call.png"/><h3>Call kid's school</h3><p>Finish By: 08/11/12</p></li>
+				<li><img data-role="ui-li-icon" id="payBill" src="images/Pay Bill.png"/><h3>Power bill</h3><p>Finish By: 08/12/12</p></li>
+			    </ul>
+			</div>
+			
+		    </div>
+		    
+		    <!--Thumbnail Grid -->
+		    <div data-role="fieldset">
+			<div class="ui-grid-"b">
+			    <div class="ui-block-a" >
+				<img src="images/Inside.png" style="height:100px"/><p>Inside Jobs</p>
+			    </div>
+			    <div class="ui-block-b" >
+				<img src="images/Outside.png" style="height:100px"/><p>Outside Jobs</p>
+			    </div>
+			    <div class="ui-block-c">
+				<img src="images/Errand.png" style="height:100px" /><p>Errand Runs</p>
+			    </div>
+			    <div class="ui-block-a" >
+				<img src="images/Make Phone Call.png" style="height:100px"/><p>Make Phone Call</p>
+			    </div>
+			    <div class="ui-block-b" >
+				<img src="images/Pay Bill.png" style="height:100px"/><p>Pay Bill</p>
+			    </div>
+			</div>
+		    </div>
+	    </div>
+        
+        <div data-role="footer" data-position="fixed" data-theme="b" data-id="additem">
+            <div data-role="navbar">
+                <ul>
+		    <li><a href="http://agvinsant.github.com/MIU-Projects/week02/Gold">Gold</a></li>
+		    <li><a href="http://agvinsant.github.com/MIU-Projects/week02/Bronze">Bronze</a></li>
+		    <li><a href="http://adamvinsant.net84.net/honeyDoApp">VFW App</a></li>
+		    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>    
+    </div>
+    
+    <!-- News Feed -->
+    
+    
+    
+
+	<!-- JavaScript under here -->
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+    <script type="text/javascript" src="js/json.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>

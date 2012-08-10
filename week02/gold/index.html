@@ -16,123 +16,118 @@
 	
 	<!-- StyleSheets under here -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
-        <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
 
 </head>
 <body>
-    <!-- HOME PAGE -->
-    <div data-role="page" id="home" data-theme="a">
+    <!--Home Page -->
     
-        <div data-role="header" data-position="fixed" data-theme="b">
-            <h1>Honey Do List</h1>
-        </div>
-        
-        <div data-role="content">
-            <div data-role="fieldcontain">   
-                <img id="feature" class="feature" src="images/handyman.png" width=250 height=150/>
+    <div data-role="page" id="home" data-theme="a">
+	
+	<div data-role="header" data-position="fixed" data-theme="b">
+	    <h1>Honey Do List</h1>
+	</div>
+	
+	<div data-role="content">
+	    <div data-role="fieldcontain" class="featContain">   
+                <img id="feature" class="feature" src="images/handymangold.gif" width=250 height=150/>
                 <a href="additem.html" data-ajax="false" data-role="button" data-icon="arrow" data-iconpos="right" data-theme="b">Add a Chore</a>
-            </div> 
-            
-            <div data-role="fieldcontain">
-                <label for="search">Search Chores:</label>
-                <!--<input type="search" name="search" id="search" value=""/>-->
-		<input type="text" id="search" data-theme="b"/>
-		<input type="button" value="Search Chores" id="searchButton" class="searchButton" data-theme="b" />
             </div>
-            
-            <div data-role="fieldcontain">
-                <label for="browse">Browes Chores By Type:</label> 
-		    <div data-role="collapsible-set">
-			<div data-role="collapsible" data-collapsed="true" data-theme="b">
-			    <h3>Inside Jobs</h3>
-			    <ul data-role="listview" data-theme="a">
-				<li><h3>Clean Kitchen</h3></li>
-				<li><h3>Clean Bathroom</h3></li>
-				<li><h3>Sweep Floors</h3></li>
-			    </ul>
-			</div>
-			<div data-role="collapsible" data-collapsed="true" data-theme="b">
-			    <h3>Outside Jobs</h3>
-			    <ul data-role="listview" data-theme="a">
-				<li><h3>Mow Lawn</h3></li>
-				<li><h3>Take trash to road</h3></li>
-				<li><h3>Clean Gutters</h3></li>
-			    </ul>
-			</div>
-			<div data-role="collapsible" data-collapsed="true" data-theme="b">
-			    <h3>Errand Runs</h3>
-			    <ul data-role="listview" data-theme="a">
-				<li><h3>Go to hardware store</h3></li>
-				<li><h3>Go get pizza</h3></li>
-				<li><h3>Go to Walmart</h3></li>
-			    </ul>
-			</div>
-			<div data-role="collapsible" data-collapsed="true" data-theme="b">
-			    <h3>Make Phone Call</h3>
-			    <ul data-role="listview" data-theme="a">
-				<li><h3>Call Doctor's Office</h3></li>
-				<li><h3>Call kid's school</h3></li>
-				<li><h3>Call Mom</h3></li>
-			    </ul>
-			</div>
-			<div data-role="collapsible" data-collapsed="true" data-theme="b">
-			    <h3>Pay Bill</h3>
-			    <ul data-role="listview" data-theme="a">
-				<li><h3>Rent bill</h3></li>
-				<li><h3>Power bill</h3></li>
-				<li><h3>Water bill</h3></li>
-			    </ul>
-			</div>
-			
-		    </div>
-		    
+	    
+	    <div data-role="fieldcontain">
+		<ul data-role="listview" data-filter="true" data-theme="a">
+		    <li data-role="list-divider"><h3>Browse Chores</h3></li>
+		    <li><a href="construction.html" data-ajax="false"><img src="images/Inside.png"/><h3>Inside Jobs</h3><p>Stuff you do inside the house</p></a></li>
+		    <li><a href="construction.html" data-ajax="false"><img src="images/Outside.png"/><h3>Outside Jobs</h3><p>Stuff you do outside the house</p></a></li>
+		    <li><a href="construction.html" data-ajax="false"><img src="images/Errand.png"/><h3>Errand Runs</h3><p>Things you have to leave the house for</p></a></li>
+		    <li><a href="construction.html" data-ajax="false"><img src="images/Make Phone Call.png"/><h3>Make Phone Call</h3></h3><p>Phone calls you have to make</p></a></li>
+		    <li><a href="construction.html" data-ajax="false"><img src="images/Pay Bill.png"/><h3>Pay Bill</h3><p>Stupid bills you have to pay</p></a></li>
+		    <li><a href="construction.html" data-ajax="false"><img src="images/Urgent.png"/><h3>Urgent Jobs</h3><p>Stuff you need to do FIRST</p></a></li>
+		    <li><a href="construction.html" data-ajax="false"><img src="images/Recurring.png"/><h3>Recurring Jobs</h3><p>Regularly scheduled chores</p></a></li>
+		</ul>
+		
 	    </div>
-        
-        <div data-role="footer" data-position="fixed" data-theme="b" data-id="additem">
-            <div data-role="navbar">
+	</div>
+	
+	<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+	    <div data-role="navbar">
+                <ul>
+		    <li><a href="http://agvinsant.github.com/MIU-Projects/week02/Gold" data-ajax="false">Gold</a></li>
+		    <li><a href="http://agvinsant.github.com/MIU-Projects/week02/Bronze">Bronze</a></li>
+		    <li><a href="http://adamvinsant.net84.net/honeyDoApp">VFW App</a></li>
+		    <li><a href="about.html" data-ajax="false">About</a></li>
+                </ul>
+	</div>
+	
+    </div>
+	
+    <!-- Construction Page-->
+    
+    <div data-role="page" id="construction" data-theme="a">
+	<div data-role="header" data-position="fixed" data-theme="b">
+	    <h1>Honey Do List</h1>
+	</div>
+	
+	<div data-role="content">
+	    <div data-role="fieldcontain">   
+                <img id="feature" class="feature" src="images/handymangold.gif" width=250 height=150/>
+                <a href="additem.html" data-ajax="false" data-role="button" data-icon="arrow" data-iconpos="right" data-theme="b">Add a Chore</a>
+            </div>
+	    
+	    <div data-role="fieldcontain">
+		<h3>This page is currently under construction</h3>
+		<p>Please excuse our mess as we are working hard to make this app work correctly</p>
+	    </div>
+	</div>
+	
+	<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+	    <div data-role="navbar">
                 <ul>
                     <li><a href="#home">Home</a></li>
 		    <li><a href="http://agvinsant.github.com/MIU-Projects/week02/Gold">Gold</a></li>
 		    <li><a href="http://agvinsant.github.com/MIU-Projects/week02/Bronze">Bronze</a></li>
 		    <li><a href="http://adamvinsant.net84.net/honeyDoApp">VFW App</a></li>
+		    <li><a href="#about" data-ajax="false">About</a></li>
                 </ul>
-            </div>
-        </div>    
+	</div>
+	
     </div>
+	
+    <!-- About Page -->
     
-    <!-- Add Item PAGE -->
-    
-    <!-- News Feed -->
-    <div data-role="page" id="newsfeed" data-add-back-btn="true" data-theme="a">
-        <div data-role="header" data-position="fixed" data-theme="b">
-            <h1>CNN Newsfeed</h1>
-        </div>
-        
-        <div data-role="content">
-			
-        </div>
-        
-        <div data-role="footer" data-position="fixed" data-theme="b" data-id="additem">
-            <div data-role="navbar">
+    <div data-role="page" id="about" data-theme="a" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed" data-theme="b">
+	    <h1>About This App</h1>
+	</div>
+	
+	<div data-role="content">
+	    <h3>Adam Vinsant</h3>
+	    <p>This App is for my MIU 1208 class. The GOLD app is the main app that I will be expanding on using jQuery. The BRONZE app contains the stuff that I don't really want to incorporate into the app.</p>
+	</div>
+	
+	<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+	    <div data-role="navbar">
                 <ul>
                     <li><a href="#home">Home</a></li>
-		    <li><a href="http://agvinsant.github.com/MIU-Projects/week02/Gold">Gold App</a></li>
-		    <li><a href="http://agvinsant.github.com/MIU-Projects/week02/Bronze">Bronze App</a></li>
+		    <li><a href="http://agvinsant.github.com/MIU-Projects/week02/Gold">Gold</a></li>
+		    <li><a href="http://agvinsant.github.com/MIU-Projects/week02/Bronze">Bronze</a></li>
 		    <li><a href="http://adamvinsant.net84.net/honeyDoApp">VFW App</a></li>
+		    <li><a href="about.html" data-ajax="false">About</a></li>
                 </ul>
-        </div>    
+	</div>
+	
     </div>
+
+	
     
-    
+	
 
 	<!-- JavaScript under here -->
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
-    <script type="text/javascript" src="js/search.js"></script>
-    <script type="text/javascript" src="js/json.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
