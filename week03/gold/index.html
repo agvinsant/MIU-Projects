@@ -1,0 +1,246 @@
+<!doctype html>  
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Honey Do List</title>
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta http-equiv="cleartype" content="on">
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<link rel="stylesheet" href="css/style.css"/>
+	
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+  
+    
+    <div data-role="page" id="home" data-theme="a">
+	
+	<div data-role="header" data-position="fixed" data-theme="b">
+	    <h1>Honey Do List</h1>
+	</div>
+	
+	<div data-role="content">
+	    <div data-role="fieldcontain" class="featContain">   
+                <img id="feature" class="feature" src="images/handymangold.gif" width=250 height=150/>
+                <a href="#additem" data-role="button" data-icon="arrow" data-iconpos="right" data-theme="b">Add a Chore</a>
+            </div>
+	    
+	    <div data-role="fieldcontain">
+		<ul data-role="listview" data-filter="true" data-theme="a">
+		    <li data-role="list-divider"><h3>Browse Chores</h3></li>
+		    <li><a href="#construction" data-ajax="false"><img src="images/Inside.png"/><h3>Inside Jobs</h3><p>Stuff you do inside the house</p></a></li>
+		    <li><a href="#construction" data-ajax="false"><img src="images/Outside.png"/><h3>Outside Jobs</h3><p>Stuff you do outside the house</p></a></li>
+		    <li><a href="#construction" data-ajax="false"><img src="images/Errand.png"/><h3>Errand Runs</h3><p>Things you have to leave the house for</p></a></li>
+		    <li><a href="#construction" data-ajax="false"><img src="images/Make Phone Call.png"/><h3>Make Phone Call</h3></h3><p>Phone calls you have to make</p></a></li>
+		    <li><a href="#construction" data-ajax="false"><img src="images/Pay Bill.png"/><h3>Pay Bill</h3><p>Stupid bills you have to pay</p></a></li>
+		    <li><a href="#construction" data-ajax="false"><img src="images/Urgent.png"/><h3>Urgent Jobs</h3><p>Stuff you need to do FIRST</p></a></li>
+		    <li><a href="#construction" data-ajax="false"><img src="images/Recurring.png"/><h3>Recurring Jobs</h3><p>Regularly scheduled chores</p></a></li>
+		</ul>
+		
+	    </div>
+	    
+	</div>
+	
+	<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+	    <div data-role="navbar">
+                <ul>
+		    <li><a href="http://adamvinsant.net84.net/gold" data-ajax="false">Gold</a></li>
+		    <li><a href="http://adamvinsant.net84.net/bronze">Bronze</a></li>
+		    <li><a href="http://adamvinsant.net84.net/honeyDoApp">VFW App</a></li>
+		    <li><a href="#about" data-ajax="false">About</a></li>
+                </ul>
+	    </div>	
+	</div>
+	
+    </div>
+	
+    
+    <div data-role="page" id="additem" data-theme="a">
+	<div data-role="header" data-position="fixed" data-theme="b" >
+	    <a href="#home" data-icon="arrow-l">Home</a>
+	    <h1>Add A Chore</h1>
+	</div>
+	
+	<div data-role="content">
+	    <form action="" method="post" id="choreForm">   
+		    <div data-role="fieldcontain">
+			<label class="choretype" for="choretype">**Chore Type: </label>
+			<select name="choretype" id="choretype" data-theme="b" data-native-menu="false">
+			    <option value="Select Chore Type">Select Chore Type</option>
+			    <option value="Inside">Inside Job</option>
+			    <option value="Outside">Outside Job</option>
+			    <option value="Errand">Errand Run</option>
+			    <option value="Make Phone Call">Make Phone Call</option>
+			    <option value="Pay Bill">Pay Bill</option>
+			</select>
+		    </div>
+		    
+		    <div data-role="fieldcontain">
+			<label for="chorename">**Name: </label><input type="text" id="chorename" class="chorename" placeholder="Mow Lawn" data-theme="b"/>
+		    </div>
+		    <div data-role="fieldcontain">
+			<label for="finishby" >**Finish Date: </label><input type="text" class="finishby" id="finishby" data-theme="b" placeholder="Month/Day/Year"/>
+		    </div>
+		    <div data-role="fieldcontain">
+			<fieldset data-role="controlgroup" data-type="horizontal">
+			    <legend>Is This Chore Urgent?</legend>
+			    <label for="yes" >Yes</label>
+			    <input type="radio" name="urgency" value="Yes" id="yes" data-theme="a"/>
+			    <label for="no" >No</label>
+			    <input type="radio" name="urgency" value="No" id="no" data-theme="a"/>
+			</fieldset>
+		    </div>
+		    <div data-role="fieldcontain">
+			<label for="recurring">Recurring or Regularly Scheduled Chore?</label>
+			<select data-role="slider" data-theme="b">
+			    <option value="no">No</option>
+			    <option value="yes">Yes</option>
+			</select>
+		    </div>
+		    <div data-role="fieldcontain">	
+			<label for="difficulty">Chore Difficulty:</label><input type="range" id="difficulty" class="difficulty" value="5" min="1" max="10" step="1" data-theme="b" />
+		    </div>
+		    <div data-role="fieldcontain">
+			<label for="chorenotes">Chore Notes:</label>
+			<textarea name="Chore Notes" class="chorenotes" id="chorenotes" placeholder="Type Notes Here" data-theme="b"></textarea>
+		    </div>
+		    
+		    <div data-role="fieldcontainer">
+			<input type="submit" value="Submit Chore" id="submitButton" data-theme="b"/>
+		    </div>
+		    <div data-role="fieldcontainer">
+			<input type="reset" value="Reset" data-theme="a"/>
+		    </div>
+	                  
+	    </form>
+	</div>
+	
+	<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+	    <div data-role="navbar">
+                <ul>
+		    <li><a href="http://adamvinsant.net84.net/gold" data-ajax="false">Gold</a></li>
+		    <li><a href="http://adamvinsant.net84.net/bronze">Bronze</a></li>
+		    <li><a href="http://adamvinsant.net84.net/honeyDoApp">VFW App</a></li>
+		    <li><a href="#about">About</a></li>
+                </ul>
+	    </div>
+	</div>
+	
+    </div>	
+	
+
+    
+    <div data-role="page" id="construction"  data-theme="a">
+	<div data-role="header" data-position="fixed" data-theme="b">
+	    <a href="#home" data-icon="arrow-l">Home</a>
+	    <h1>Under Construction</h1>
+	    <a href="#additem" data-icon="arrow">Add Chore</a>
+	</div>
+	
+	<div data-role="content">
+	    
+	    <div data-role="fieldcontain">
+		<img id="feature" class="feature" src="images/handymangold.gif" width=250 height=150/>
+		<h3>This page is currently under construction</h3>
+		<p>Please excuse our mess as we are working hard to make this app work correctly</p>
+	    </div>
+	    
+	    <div data-role="fieldcontain">   
+                
+            </div>
+	    
+	    
+	</div>
+	
+	<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+	    <div data-role="navbar">
+                <ul>
+		    <li><a href="http://agvinsant.github.com/MIU-Projects/week02/Gold">Gold</a></li>
+		    <li><a href="http://agvinsant.github.com/MIU-Projects/week02/Bronze">Bronze</a></li>
+		    <li><a href="http://adamvinsant.net84.net/honeyDoApp">VFW App</a></li>
+		    <li><a href="#about">About</a></li>
+                </ul>
+	    </div>
+	</div>
+	
+    </div>
+	
+    
+    <div data-role="page" id="about" data-theme="a">
+	<div data-role="header" data-position="fixed" data-theme="b">
+	    <a href="#home" data-icon="arrow-l">Home</a>
+	    <h1>About This App</h1>
+	    <a href="#additem" data-icon="arrow">Add Chore</a>
+	</div>
+	
+	<div data-role="content">
+	    <img id="feature" class="feature" src="images/handymangold.gif" width=250 height=150/>
+	    <h3>Adam Vinsant</h3>
+	    <p>This App is for my MIU 1208 class. The GOLD app is the main app that I will be expanding on using jQuery. The BRONZE app contains the stuff that I don't really want to incorporate into the app.</p>
+	    <p>Follow the links below to see my work.</p>
+	
+	    <div data-role="footer" data-theme="b">
+		    <h4>Follow me on Twitter</h4>
+	    </div>
+
+		<div>
+		    <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+		    <script>
+			new TWTR.Widget({
+			  version: 2,
+			  type: 'profile',
+			  rpp: 4,
+			  interval: 30000,
+			  width: 'auto',
+			  height: 300,
+			  theme: {
+			    shell: {
+			      background: '#333333',
+			      color: '#ffffff'
+			    },
+			    tweets: {
+			      background: '#000000',
+			      color: '#ffffff',
+			      links: '#07c9eb'
+			    }
+			  },
+			  features: {
+			    scrollbar: false,
+			    loop: false,
+			    live: false,
+			    behavior: 'all'
+			  }
+			}).render().setUser('groovelogic').start();
+		    </script>
+		</div>
+	</div>
+	
+	
+	<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+	    <div data-role="navbar">
+                <ul>
+		    <li><a href="http://agvinsant.github.com/MIU-Projects/week02/Gold">Gold</a></li>
+		    <li><a href="http://agvinsant.github.com/MIU-Projects/week02/Bronze">Bronze</a></li>
+		    <li><a href="http://adamvinsant.net84.net/honeyDoApp">VFW App</a></li>
+		    <li><a href="#about">About</a></li>
+                </ul>
+	    </div>
+	</div>
+	
+    </div>
+
+	
+    
+	
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
