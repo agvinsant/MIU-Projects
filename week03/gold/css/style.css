@@ -11,3 +11,12 @@ div.featContain {
     padding: 20px;
 }
 
+label.error {
+    display: block;
+    margin: 10px 0;
+    color: red;
+}
+
+#errorsLink {
+    display: none;
+}

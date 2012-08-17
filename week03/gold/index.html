@@ -71,9 +71,16 @@
 	<div data-role="content">
 	    <form action="" method="post" id="choreForm">   
 		    <div data-role="fieldcontain">
+			<a class="display" href="#displayList" id="displayButton" data-role="button" data-theme="b">Display All</a>
+			<a href="#" data-role="button" class="clear" id="clearButton">Clear All</a>
+		    </div>
+		    
+		    <p>**Required Fields</p>
+
+		    <div data-role="fieldcontain">
 			<label class="choretype" for="choretype">**Chore Type: </label>
-			<select name="choretype" id="choretype" data-theme="b" data-native-menu="false">
-			    <option value="Select Chore Type">Select Chore Type</option>
+			<select name="choretype" id="choretype" data-theme="b" data-native-menu="false" class="required">
+			    <option value="Select Chore Type" data-placeholder="true">Select Chore Type</option>
 			    <option value="Inside">Inside Job</option>
 			    <option value="Outside">Outside Job</option>
 			    <option value="Errand">Errand Run</option>
@@ -83,23 +90,25 @@
 		    </div>
 		    
 		    <div data-role="fieldcontain">
-			<label for="chorename">**Name: </label><input type="text" id="chorename" class="chorename" placeholder="Mow Lawn" data-theme="b"/>
+			<label for="chorename">**Name: </label>
+			<input type="text" id="chorename" placeholder="Mow Lawn" data-theme="b" class="required"/>
 		    </div>
 		    <div data-role="fieldcontain">
-			<label for="finishby" >**Finish Date: </label><input type="text" class="finishby" id="finishby" data-theme="b" placeholder="Month/Day/Year"/>
+			<label for="finishby" >**Finish Date: </label>
+			<input type="date" id="finishby" data-theme="b" placeholder="Month/Day/Year" class="required"/>
 		    </div>
 		    <div data-role="fieldcontain">
-			<fieldset data-role="controlgroup" data-type="horizontal">
-			    <legend>Is This Chore Urgent?</legend>
-			    <label for="yes" >Yes</label>
-			    <input type="radio" name="urgency" value="Yes" id="yes" data-theme="a"/>
+			<fieldset data-role="controlgroup">
+			    <legend>**Is This Chore Urgent?</legend>
+			    <label for="yes">Yes</label>
+			    <input type="radio" name="urgency" value="Yes" id="yes" data-theme="a" class="required"/>
 			    <label for="no" >No</label>
 			    <input type="radio" name="urgency" value="No" id="no" data-theme="a"/>
 			</fieldset>
 		    </div>
 		    <div data-role="fieldcontain">
 			<label for="recurring">Recurring or Regularly Scheduled Chore?</label>
-			<select data-role="slider" data-theme="b">
+			<select data-role="slider" name="recurring" id="recurring" data-theme="b">
 			    <option value="no">No</option>
 			    <option value="yes">Yes</option>
 			</select>
@@ -109,16 +118,17 @@
 		    </div>
 		    <div data-role="fieldcontain">
 			<label for="chorenotes">Chore Notes:</label>
-			<textarea name="Chore Notes" class="chorenotes" id="chorenotes" placeholder="Type Notes Here" data-theme="b"></textarea>
+			<textarea name="Chore Notes" class="chorenotes" id="chorenotes" placeholder="Fill mower with gas. Don't forget to weedeat and spray weed killer." data-theme="b"></textarea>
 		    </div>
 		    
 		    <div data-role="fieldcontainer">
-			<input type="submit" value="Submit Chore" id="submitButton" data-theme="b"/>
+			<input type="submit" class="submit" value="Submit Chore" id="submitButton" data-theme="b"/>
 		    </div>
 		    <div data-role="fieldcontainer">
 			<input type="reset" value="Reset" data-theme="a"/>
 		    </div>
-	                  
+	            
+		    <a href="#formErrors" id="errorsLink" data-rel="dialog" data-transition="pop">Open Errors</a>      
 	    </form>
 	</div>
 	
@@ -150,20 +160,14 @@
 		<img id="feature" class="feature" src="images/handymangold.gif" width=250 height=150/>
 		<h3>This page is currently under construction</h3>
 		<p>Please excuse our mess as we are working hard to make this app work correctly</p>
-	    </div>
-	    
-	    <div data-role="fieldcontain">   
-                
-            </div>
-	    
-	    
+	    </div>	    
 	</div>
 	
 	<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
 	    <div data-role="navbar">
                 <ul>
-		    <li><a href="http://agvinsant.github.com/MIU-Projects/week02/Gold">Gold</a></li>
-		    <li><a href="http://agvinsant.github.com/MIU-Projects/week02/Bronze">Bronze</a></li>
+		    <li><a href="http://agvinsant.github.com/MIU-Projects/week03/gold">Gold</a></li>
+		    <li><a href="http://agvinsant.github.com/MIU-Projects/week03/bronze">Bronze</a></li>
 		    <li><a href="http://adamvinsant.net84.net/honeyDoApp">VFW App</a></li>
 		    <li><a href="#about">About</a></li>
                 </ul>
@@ -226,21 +230,46 @@
 	<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
 	    <div data-role="navbar">
                 <ul>
-		    <li><a href="http://agvinsant.github.com/MIU-Projects/week02/Gold">Gold</a></li>
-		    <li><a href="http://agvinsant.github.com/MIU-Projects/week02/Bronze">Bronze</a></li>
+		    <li><a href="http://agvinsant.github.com/MIU-Projects/week03/gold">Gold</a></li>
+		    <li><a href="http://agvinsant.github.com/MIU-Projects/week03/bronze">Bronze</a></li>
 		    <li><a href="http://adamvinsant.net84.net/honeyDoApp">VFW App</a></li>
 		    <li><a href="#about">About</a></li>
                 </ul>
 	    </div>
 	</div>
-	
     </div>
+    
+    <div data-role="page" id="displayList" data-theme="a">
+	<div data-role="header" data-position="fixed" data-theme="b" >
+	    <a href="#additem" data-icon="arrow-l">Back</a>
+	    <h1>The List</h1>
+	</div>
+	
+	<div data-role="content" id="data">
+	    
+	</div>
+	
+	<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+	    <div data-role="navbar">
+                <ul>
+		    <li><a href="http://agvinsant.github.com/MIU-Projects/week03/gold">Gold</a></li>
+		    <li><a href="http://agvinsant.github.com/MIU-Projects/week03/bronze">Bronze</a></li>
+		    <li><a href="http://adamvinsant.net84.net/honeyDoApp">VFW App</a></li>
+		    <li><a href="#about">About</a></li>
+                </ul>
+	    </div>
+	</div>	
+    </div>
+    
+    
 
 	
     
 	
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/json.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
