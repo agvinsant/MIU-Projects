@@ -9,6 +9,7 @@ var json = {
         "chorename": ["Name: ", "Clean Kitchen"],
         "finishby": ["Finish By: ", "12/31/2012"],
         "urgency":["Is this chore urgent: ", "No"],
+        "recurring":["Recurring chore:", "Yes" ],
         "difficulty":["Difficulty: ", "5"],
         "chorenotes":["Chore Notes: ", "Notes about cleaning kitchen."]
     },
@@ -17,6 +18,7 @@ var json = {
         "chorename": ["Name: ", "Mow Lawn"],
         "finishby": ["Finish By: ", "08/14/2012"],
         "urgency":["Is this chore urgent: ", "Yes"],
+        "recurring":["Recurring chore:", "Yes" ],
         "difficulty":["Difficulty: ", "5"],
         "chorenotes":["Chore Notes: ", "Notes about mowing the lawn."]
     },
@@ -25,6 +27,7 @@ var json = {
         "chorename": ["Name: ", "Go to store"],
         "finishby": ["Finish By: ", "10/31/2012"],
         "urgency":["Is this chore urgent: ", "No"],
+        "recurring":["Recurring chore:", "No" ],
         "difficulty":["Difficulty: ", "5"],
         "chorenotes":["Chore Notes: ", "Notes about going to the store."]
     },
@@ -33,6 +36,7 @@ var json = {
         "chorename": ["Name: ", "Make Bed"],
         "finishby": ["Finish By: ", "08/31/2012"],
         "urgency":["Is this chore urgent: ", "Yes"],
+        "recurring":["Recurring chore:", "Yes" ],
         "difficulty":["Difficulty: ", "3"],
         "chorenotes":["Chore Notes: ", "Notes about making the bed."]
     },
@@ -41,6 +45,7 @@ var json = {
         "chorename": ["Name: ", "rake leaves"],
         "finishby": ["Finish By: ", "8/29/2012"],
         "urgency":["Is this chore urgent: ", "No"],
+        "recurring":["Recurring chore:", "No" ],
         "difficulty":["Difficulty: ", "5"],
         "chorenotes":["Chore Notes: ", "Notes raking leaves."]
     },
@@ -49,6 +54,7 @@ var json = {
         "chorename": ["Name: ", "Power Bill"],
         "finishby": ["Finish By: ", "8/31/2012"],
         "urgency":["Is this chore urgent: ", "No"],
+        "recurring":["Recurring chore:", "Yes" ],
         "difficulty":["Difficulty: ", "2"],
         "chorenotes":["Chore Notes: ", "Notes about paying a bill."]
     },
@@ -57,6 +63,7 @@ var json = {
         "chorename": ["Name: ", "Sweep floor"],
         "finishby": ["Finish By: ", "8/31/2012"],
         "urgency":["Is this chore urgent: ", "No"],
+        "recurring":["Recurring chore:", "Yes" ],
         "difficulty":["Difficulty: ", "1"],
         "chorenotes":["Chore Notes: ", "Notes about sweeping the floor."]
     },
@@ -65,6 +72,7 @@ var json = {
         "chorename": ["Name: ", "Take out garbage"],
         "finishby": ["Finish By: ", "8/31/2012"],
         "urgency":["Is this chore urgent: ", "Yes"],
+         "recurring":["Recurring chore:", "Yes" ],
         "difficulty":["Difficulty: ", "2"],
         "chorenotes":["Chore Notes: ", "Notes about taking out garbage."]
     },
@@ -73,6 +81,7 @@ var json = {
         "chorename": ["Name: ", "Go shopping"],
         "finishby": ["Finish By: ", "8/31/2012"],
         "urgency":["Is this chore urgent: ", "Yes"],
+         "recurring":["Recurring chore:", "No" ],
         "difficulty":["Difficulty: ", "5"],
         "chorenotes":["Chore Notes: ", "Notes about going shopping."]
     },
@@ -81,6 +90,7 @@ var json = {
         "chorename": ["Name: ", "Dust furniture"],
         "finishby": ["Finish By: ", "8/31/2012"],
         "urgency":["Is this chore urgent: ", "No"],
+         "recurring":["Recurring chore:", "Yes" ],
         "difficulty":["Difficulty: ", "5"],
         "chorenotes":["Chore Notes: ", "Notes about dusting the furniture."]
     },
@@ -89,6 +99,7 @@ var json = {
         "chorename": ["Name: ", "Clean Patio"],
         "finishby": ["Finish By: ", "8/31/2012"],
         "urgency":["Is this chore urgent: ", "No"],
+         "recurring":["Recurring chore:", "No" ],
         "difficulty":["Difficulty: ", "5"],
         "chorenotes":["Chore Notes: ", "Notes about cleaning the patio."]
     },
@@ -97,6 +108,7 @@ var json = {
         "chorename": ["Name: ", "take son to friend's house"],
         "finishby": ["Finish By: ", "8/27/2012"],
         "urgency":["Is this chore urgent: ", "No"],
+         "recurring":["Recurring chore:", "Yes" ],
         "difficulty":["Difficulty: ", "2"],
         "chorenotes":["Chore Notes: ", "Take Gavin to Brandon's house."]
     },
@@ -104,7 +116,8 @@ var json = {
         "choretype": ["Chore Type: ", "Inside"],
         "chorename": ["Name: ", "Clean kid's room"],
         "finishby": ["Finish By: ", "8/31/2012"],
-        "urgency":["Is this chore urgent: ", "Somewhat"],
+        "urgency":["Is this chore urgent: ", "No"],
+         "recurring":["Recurring chore:", "Yes" ],
         "difficulty":["Difficulty: ", "7"],
         "chorenotes":["Chore Notes: ", "Clean the kid's messy room."]
     },
@@ -113,6 +126,7 @@ var json = {
         "chorename": ["Name: ", "Organize Storage"],
         "finishby": ["Finish By: ", "8/25/2012"],
         "urgency":["Is this chore urgent: ", "Yes"],
+         "recurring":["Recurring chore:", "No" ],
         "difficulty":["Difficulty: ", "9"],
         "chorenotes":["Chore Notes: ", "Clean out both storage sheds."]
     },
@@ -121,6 +135,7 @@ var json = {
         "chorename": ["Name: ", "Go get movie"],
         "finishby": ["Finish By: ", "8/27/2012"],
         "urgency":["Is this chore urgent: ", "Yes"],
+         "recurring":["Recurring chore:", "No" ],
         "difficulty":["Difficulty: ", "2"],
         "chorenotes":["Chore Notes: ", "Going to get movie from Red Box."]
     },
@@ -129,6 +144,7 @@ var json = {
         "chorename": ["Name: ", "Clean Bathroom"],
         "finishby": ["Finish By: ", "8/22/2012"],
         "urgency":["Is this chore urgent: ", "Yes"],
+         "recurring":["Recurring chore:", "Yes" ],
         "difficulty":["Difficulty: ", "6"],
         "chorenotes":["Chore Notes: ", "Notes about cleaning the bathroom."]
     },
@@ -136,7 +152,8 @@ var json = {
         "choretype": ["Chore Type: ", "Outside"],
         "chorename": ["Name: ", "Bath Dog"],
         "finishby": ["Finish By: ", "8/27/2012"],
-        "urgency":["Is this chore urgent: ", "Somewhat"],
+        "urgency":["Is this chore urgent: ", "Yes"],
+         "recurring":["Recurring chore:", "Yes" ],
         "difficulty":["Difficulty: ", "5"],
         "chorenotes":["Chore Notes: ", "Notes about bathing the dog."]
     },
@@ -145,6 +162,7 @@ var json = {
         "chorename": ["Name: ", "take kids to doctor"],
         "finishby": ["Finish By: ", "8/27/2012"],
         "urgency":["Is this chore urgent: ", "No"],
+         "recurring":["Recurring chore:", "No" ],
         "difficulty":["Difficulty: ", "3"],
         "chorenotes":["Chore Notes: ", "Notes about the kid's doctor."]
     },
@@ -153,6 +171,7 @@ var json = {
         "chorename": ["Name: ", "Do laundry"],
         "finishby": ["Finish By: ", "8/31/2012"],
         "urgency":["Is this chore urgent: ", "Yes"],
+         "recurring":["Recurring chore:", "Yes" ],
         "difficulty":["Difficulty: ", "5"],
         "chorenotes":["Chore Notes: ", "Notes about doing the laundry."]
     },
@@ -161,6 +180,7 @@ var json = {
         "chorename": ["Name: ", "Call Doctor's office"],
         "finishby": ["Finish By: ", "8/31/2012"],
         "urgency":["Is this chore urgent: ", "Yes"],
+         "recurring":["Recurring chore:", "No" ],
         "difficulty":["Difficulty: ", "7"],
         "chorenotes":["Chore Notes: ", "Notes about making a phone call."]
     }
