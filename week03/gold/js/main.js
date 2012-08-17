@@ -125,7 +125,7 @@ $('#additem').on('pageinit', function(){
     var makeItemLinks = function(key, linksLi) {
 	    //add edit single item link
 	    var editLink = document.createElement('a');
-	    editLink.href = '#';
+	    editLink.href = '#additem';
 	    editLink.key = key;
 	    var editText = "Edit Chore";		//Change to fit form type ie Edit Contact
 	    editLink.setAttribute("class", "editLink");
