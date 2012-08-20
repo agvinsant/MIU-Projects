@@ -1,0 +1,168 @@
+body {
+    background: #3f3f3f;
+}
+
+
+h1 {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	margin: 5px;
+	padding:5px;
+        font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	text-decoration:none;
+	color:#eee;
+	text-align: center;
+	background: #5b92c0;
+}
+nav {
+	padding: 10px;
+        margin: 5px;
+	background-image:url(../img/gradient1.png);
+	border-radius: 15px;
+}
+
+a.clear, a.index, a.home, a.search {
+	text-decoration:none;
+}
+
+form {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 15px;
+}
+
+fieldset {
+	
+	padding: 10px;	
+}
+
+legend {
+	font-style: italic;
+	font-weight:bold;
+	text-shadow: #005 1px 2px 3px;
+	text-transform:uppercase;
+	text-align:center;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	border-radius: 15px;
+	padding: 10px;
+	background-image:url(../img/buttonbkg.png);
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	text-decoration:none;
+	color:#eee;
+	text-align: center;		
+}
+
+select {
+	border-radius:15px;
+	width: 90%;
+}	
+
+ul {
+	color: #eee;
+	line-height: 200%;
+        list-style-type: none;
+}
+
+label {
+	display:block;	
+}
+
+input.chorename, input.finishby, textarea.chorenotes  {
+		border-radius: 10px;
+		width:90%;
+                margin-right: 10px;
+}
+
+p, label.choretype {
+	color: #eee;	
+}
+
+span {
+	font-size:12px;	
+}
+
+input.difficulty {
+	border-radius:15px;
+}
+
+textarea {
+	display:block;
+}
+
+input.submit, input.reset {
+	width: 100%;
+}
+
+a.display, input.submit, input.reset, a.clear, a.index, a.home, a.search, input.searchButton {
+        display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	margin-top: 5px;
+	padding: 5px;
+	background: #5b92c0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	text-decoration:none;
+	color:#eee;
+	text-align: center;
+        text-transform: uppercase;
+	text-shadow: #005 1px 2px 3px;
+        border-radius: 10px;
+}
+
+
+
+div {
+        margin: 5px;
+	background-image:url(../img/gradient1.png);
+	border:solid 3px #330099;
+	border-radius: 15px;
+}
+
+ul.choreList, li.eachChore {
+        display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	border-radius: 15px;
+	margin: 5px;
+	padding:5px;
+	background-image:url(../img/honeydobkg.png);
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color:#005;
+	border:#005 solid 3px;
+}
+a.editLink, a.deleteLink {
+        display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	border-radius: 15px;
+	margin-top: 2px;
+	padding: 2px;
+	background-image:url(../img/buttonbkg.png);
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	text-decoration:none;
+	color:#eee;
+	text-align: center;
+        text-transform: uppercase;
+	text-shadow: #005 1px 2px 3px;
+}
+
+#errors {
+    color:red;
+    font-weight: bold;
+}

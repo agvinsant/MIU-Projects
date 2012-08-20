@@ -1,0 +1,59 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Honey Do List</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<link rel="stylesheet" href="css/style.css"/>
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+<div data-role="page" id="about" data-theme="b" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed" data-theme="b">
+	    <h1>About This App</h1>
+	</div>
+	
+	<div data-role="content">
+	    <img id="feature" class="feature" src="images/handymangold.gif" width=250 height=150/>
+	    <h3>Adam Vinsant</h3>
+	    <p>This App is for my MIU 1208 class. The GOLD app is the main app that I will be expanding on using jQuery. The BRONZE app contains the stuff that I don't really want to incorporate into the app.</p>
+	    <p>Follow the links below to see my work.</p>
+	</div>
+	
+	<div data-role="fieldset">
+		<a href="index.html" data-ajax="false" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="b">Home</a>
+	</div>
+	
+	<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+	    <div data-role="navbar">
+                <ul>
+		    <li><a href="http://agvinsant.github.com/MIU-Projects/week02/Gold">Gold</a></li>
+		    <li><a href="http://agvinsant.github.com/MIU-Projects/week02/Bronze">Bronze</a></li>
+		    <li><a href="http://adamvinsant.net84.net/honeyDoApp">VFW App</a></li>
+		    <li><a href="about.html">About</a></li>
+                </ul>
+	</div>
+	
+    </div>
+	
+<!-- JavaScript under here -->
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

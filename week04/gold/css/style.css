@@ -1,0 +1,63 @@
+#feature {
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+div.featContain {
+    padding: 5px;
+}
+
+label.error {
+    display: block;
+    margin: 10px 0;
+    color: red;
+}
+
+#errorsLink {
+    display: none;
+}
+
+ul.choreList, li.eachChore {
+        display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	border-radius: 15px;
+	margin: 5px;
+	padding:5px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color:#eee;
+	border:#eee solid 3px;
+}
+a.editLink, a.deleteLink {
+        display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	border-radius: 15px;
+	margin-top: 2px;
+	padding: 2px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	text-decoration:none;
+	text-align: center;
+        text-transform: uppercase;
+        color: #eee
+	text-shadow: #005 1px 2px 3px;
+}
+
+ul {
+	color: #eee;
+	line-height: 200%;
+        list-style-type: none;
+}
+
+#logo {
+    display: inline-block;
+}
