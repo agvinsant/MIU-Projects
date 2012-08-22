@@ -1,5 +1,5 @@
 body {
-    background: #3f3f3f;
+    background: #dadada;
 }
 
 
@@ -57,7 +57,7 @@ legend {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:16px;
 	text-decoration:none;
-	color:#eee;
+	color:#3f3f3f;
 	text-align: center;		
 }
 
@@ -67,7 +67,7 @@ select {
 }	
 
 ul {
-	color: #eee;
+	color: #3f3f3f;
 	line-height: 200%;
         list-style-type: none;
 }
@@ -83,7 +83,7 @@ input.chorename, input.finishby, textarea.chorenotes  {
 }
 
 p, label.choretype {
-	color: #eee;	
+	color: #3f3f3f;	
 }
 
 span {

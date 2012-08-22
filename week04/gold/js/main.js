@@ -66,7 +66,8 @@ $('#additem').on('pageinit', function(){
 	    
 	    var makeDiv = a('data');
 	    var makeList = document.createElement('ul');
-	    makeList.setAttribute("class", "choreList");	//change 'choreList' to fit new HTML
+	    makeList.setAttribute("class", "choreList");
+            //change 'choreList' to fit new HTML
 	    makeDiv.appendChild(makeList);
 	    for (var i=0, len=localStorage.length; i<len; i++) {
 		var makeli = document.createElement('li');
